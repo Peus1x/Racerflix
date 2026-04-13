@@ -34,9 +34,9 @@ It demonstrates skills in UIUX design, performance optimization, and dynamic com
 
 ## 📸 Preview
 
-![Home](../Racerflix/readme/home.png)
-![Profiles](../Racerflix/readme/perfis.png)
-![Preview](../Racerflix/readme/preview.png)
+![Home](./leia-me/home.png)
+![Profiles](./leia-me/perfis.png)
+![Preview](./leia-me/preview.png)
 
 ## 👨‍💻 Author
 
