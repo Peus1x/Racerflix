@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RacerFlix</title>
+    <link rel="stylesheet" href="../css/contas.css" />
+</head>
+<body>
+
+
+    
+    <video id="bgVideo" class="video-bg" autoplay muted loop playsinline preload="auto">
+        <source src="../assets/vid/night.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo em background.
+    </video>
+</div>
+  <header class="page-header">
+    <div class="page-header__content">
+      <a href="home.html" class="logo" aria-label="Ir para a página inicial da RacerFlix">RACERFLIX</a>
+
+    <div id="loader" class="loader-overlay">
+        <video autoplay muted loop playsinline></video>
+        <div class="netflix-spinner"></div>
+    </div>
+    <div id="fadeOverlay"></div>
+      
+      <!--menu -->
+      <div class="header-right">
+          <div class="profile-menu">
+              <button class="profile-btn" id="profileBtn">
+                  <video class="profile-avatar" autoplay muted loop playsinline>
+                      <source src="../assets/vid/pf1.mp4" type="video/mp4">
+                  </video>
+              </button>
+              <section class="profile-dropdown" id="profileDropdown">
+                  <ul class="dropdown-list">
+                      <li class="dropdown-item profile-item">
+                          <a href="#" data-perfil="2">
+                              <video class="mini-avatar" autoplay muted loop playsinline preload="metadata">
+                                  <source src="../assets/vid/pf2.mp4" type="video/mp4">
+                              </video>
+                              <span>Pedro</span>
+                          </a>
+                      </li>
+
+                      <li class="dropdown-item profile-item">
+                          <a href="#" data-perfil="3">
+                              <video class="mini-avatar" autoplay muted loop playsinline preload="metadata">
+                                  <source src="../assets/vid/pf3.mp4" type="video/mp4">
+                              </video>
+                              <span>Gusmao</span>
+                          </a>
+                      </li>
+
+                      <li class="dropdown-item profile-item">
+                          <a href="#" data-perfil="1">
+                              <video class="mini-avatar" autoplay muted loop playsinline preload="metadata">
+                                  <source src="../assets/vid/pf1.mp4" type="video/mp4">
+                              </video>
+                              <span>Joao</span>
+                          </a>
+                      </li>
+                      <li class="dropdown-item"><a href="perfis.html.html">Gerenciar perfis</a></li>
+                  </ul>
+                  <div class="dropdown-divider"></div>
+                  <ul class="dropdown-list">
+                      <li class="dropdown-item">
+                          <span>Modo Escuro</span>
+                          <label class="switch">
+                              <input type="checkbox" id="themeSwitch">
+                              <span class="slider"></span>
+                          </label>
+                      </li>
+                      <li class="dropdown-item"><a href="contas.html">Conta</a></li>
+                  </ul>
+                  <div class="dropdown-divider"></div>
+                  <ul class="dropdown-list">
+                      <li class="dropdown-item"><a href="../login.html">Sair da RacerFlix</a></li>
+                  </ul>
+              </section>
+          </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="Menu lateral da conta">
+      <a href="home.html" class="sidebar__back">
+        <span aria-hidden="true">←</span>
+        <span>Voltar à RacerFlix</span>
+      </a>
+
+      <nav class="sidebar__nav" aria-label="Seções da conta">
+        <ul>
+          <li>
+            <a href="#" data-section="inicio">
+              <span class="sidebar__icon" aria-hidden="true">🏠</span>
+              <span>Visão geral</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-section="compras">
+              <span class="sidebar__icon" aria-hidden="true">💳</span>
+              <span>Assinatura</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-section="seguranca">
+              <span class="sidebar__icon" aria-hidden="true">🛡️</span>
+              <span>Segurança</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-section="dispositivos">
+              <span class="sidebar__icon" aria-hidden="true">📱</span>
+              <span>Aparelhos</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-section="usuarios">
+              <span class="sidebar__icon" aria-hidden="true">🙂</span>
+              <span>Perfis</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content">
+        <section class="account-section is-visible" id="overview">
+            <h1 class="content__title">Conta</h1>
+            <p class="content__subtitle">Detalhes da assinatura</p>
+
+    <section class="card" aria-labelledby="assinatura-titulo">
+      <span class="membership-badge">Assinante desde fevereiro de 2026</span>
+
+      <div class="card__body">
+        <h2 id="assinatura-titulo" class="plan-title">Plano Padrão com anúncios</h2>
+        <p class="plan-copy">Cobrado via: pacote Mercado Livre</p>
+      </div>
+
+      <ul class="list-links">
+        <li>
+          <a href="#">
+            <span class="list-links__left">
+              <span>
+                <span class="list-links__title">Gerenciar assinatura</span>
+              </span>
+            </span>
+            <span class="arrow" aria-hidden="true">›</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </section>
+
+  <section class="account-section" id="compras">
+    <h1 class="content__title">Assinatura</h1>
+    <p class="content__subtitle">Gerencie seu plano e cobrança.</p>
+  </section>
+
+  <section class="account-section" id="seguranca">
+    <h1 class="content__title">Segurança</h1>
+    <p class="content__subtitle">Atualize senha e proteja sua conta.</p>
+        <label for="x">Senha atual</label>
+        <input type="x" id="x" name="x" required>
+        <br><br>
+        
+        <label for="x">Nova senha</label>
+        <input type="x" id="x" name="x" required>
+        <br><br>
+        
+        <label for="x">Confirmar nova senha</label>
+        <input type="x" id="x" name="x" required>
+        <br><br>
+        
+        <button type="x">Atualizar senha</button>
+        <p id="x"></p>
+  </section>
+
+  <section class="account-section" id="dispositivos">
+    <h1 class="content__title">Aparelhos</h1>
+    <p class="content__subtitle">Gerencie acessos e dispositivos conectados.</p>
+  </section>
+
+  <section class="account-section" id="usuarios">
+    <h1 class="content__title">Perfis</h1>
+    <p class="content__subtitle">Gerencie os perfis da sua conta.</p>
+  </section>
+  
+  <section class="account-section" id="usuarios">
+    <ul class = "profiles">
+                <li>
+                    <a href="" class="profile" data-perfil="1">
+                        <figure>
+                            <video src="../assets/vid/pf1.mp4" muted loop playsinline autoplay preload="auto"></video>
+                            <figcaption>Joao</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="profile" data-perfil="2">
+                        <figure>
+                            <video src="../assets/vid/pf2.mp4" muted loop playsinline autoplay preload="auto"></video>
+                            <figcaption>Pedro</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="profile" data-perfil="3">
+                        <figure>
+                            <video src="../assets/vid/pf3.mp4" muted loop playsinline autoplay preload="auto"></video>
+                            <figcaption>Gusmao</figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+  </section>
+
+  
+</main>
+  </div>
+  <script src="../js/global.js" defer></script>
+  <script src="../js/contas.js"></script>
+</body>
+</html>

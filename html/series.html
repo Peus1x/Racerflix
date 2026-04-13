@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RacerFlix</title>
+    <link rel="stylesheet" href="../css/filmes.css">
+</head>
+<body>
+    <video id="bgVideo" class="video-bg" autoplay muted loop playsinline preload="auto">
+        <source src="../assets/vid/night.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo em background.
+    </video>
+    <!-- Tela de carregamento -->
+    <div id="loader" class="loader-overlay">
+        <video autoplay muted loop playsinline></video>
+        <div class="netflix-spinner"></div>
+    </div>
+    <div id="fadeOverlay"></div>
+
+    <!-- HEADER -->
+    <div id="global-header"></div>
+
+    <!-- HERO / BANNER -->
+    <section class="hero">
+        <video id="heroVideo" class="hero-video" muted playsinline poster="../assets/img/s11.jpg">
+            <source src="../assets/vid/s11.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+
+        <div class="hero-content">
+            <h1 class="hero-title">Brawn: The Impossible Formula 1 Story</h1>
+
+            <p class="hero-description">
+                BRAWN GPA história impossível que mudou a Fórmula 1..
+            </p>
+
+            <div class="hero-buttons">
+                <button class="hero-btn play" id="playTrailerBtn">▶ Trailer</button>
+                <button class="hero-btn info">ℹ Mais informações</button>
+                
+            </div>
+        </div>
+
+        <!-- Botão de controle à direita -->
+        <div class="hero-controls-right">
+            <button id="muteBtn" class="mute-btn" aria-label="Alternar som">
+                <span id="muteIcon">🔇</span>
+            </button>
+        </div>
+    </section>
+    <main>
+        <div class="tabs">
+           <a href="home.html"><button class="tab-btn active">Início</button></a>
+        </div>
+
+        <section class="section">
+            <h2>SERIES</h2>
+
+            <div class="row">
+                <div class="card" data-title="Formula 1: Drive to Survive">
+                    <img src="../assets/img/s1.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/s1.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Formula 1: Drive to Survive</span>
+                    <div class="card-info">
+                        <div class="card-icons">
+                            <div class="icon-circle">▶</div>
+                            <div class="icon-circle">+</div>
+                            <div class="icon-circle">👍</div>
+                        </div>
+                        <div class="card-metadata">
+                            <span class="match">98% relevante</span>
+                            <span class="age">14+</span>
+                        </div>
+                        <span class="card-category">Ação • Carros • Adrenalina</span>
+                    </div>
+                </div>
+
+                <div class="card" data-title="Top Gear">
+                    <img src="../assets/img/s2.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/s2.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Top Gear</span>
+                </div>
+
+                <div class="card" data-title="The Grand Tour">
+                    <img src="../assets/img/s3.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/s3.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">The Grand Tour</span>
+                </div>
+
+                <div class="card" data-title="Hyperdrive">
+                    <img src="../assets/img/s4.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/s4.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Hyperdrive</span>
+                </div>
+
+                <div class="card" data-title="Fastest Car">
+                    <img src="../assets/img/s5.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/s5.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Fastest Car</span>
+                </div>
+
+                <div class="card" data-title="Rust Valley Restorers">
+                    <img src="../assets/img/s6.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/s6.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Rust Valley Restorers</span>
+                </div>
+
+                <div class="card" data-title="Car Masters: Rust to Riches">
+                    <img src="../assets/img/s7.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/s7.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Car Masters: Rust to Riches</span>
+                </div>
+
+                <div class="card" data-title="West Coast Customs">
+                    <img src="../assets/img/s8.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/s8.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">West Coast Customs</span>
+                </div>
+
+                <div class="card" data-title="Street Outlaws">
+                    <img src="../assets/img/s9.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/s9.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Street Outlaws</span>
+                </div>
+
+                <div class="card" data-title="Overhaulin">
+                    <img src="../assets/img/s10.webp" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/s10.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Overhaulin</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        © 2026 RacerFlix
+    </footer>
+
+    <script src="../js/global.js" defer></script>
+    <script src="../js/filmes.js" defer></script>
+</body>
+</html>

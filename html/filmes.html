@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RacerFlix</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/filmes.css">
+</head>
+<body>
+    <video id="bgVideo" class="video-bg" autoplay muted loop playsinline preload="auto">
+        <source src="../assets/vid/night.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo em background.
+    </video>
+    
+    <div id="loader" class="loader-overlay">
+        <video autoplay muted loop playsinline></video>
+        <div class="netflix-spinner"></div>
+    </div>
+    <div id="fadeOverlay"></div>
+    <video id="bgVideo" class="video-bg" autoplay muted loop playsinline></video>
+
+    <div id="global-header"></div>
+
+    <!-- HERO / BANNER -->
+    <section class="hero">
+        <video id="heroVideo" class="hero-video" muted playsinline poster="../assets/img/f1.jpg">
+            <source src="../assets/vid/F1V.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+
+        <div class="hero-content">
+            <h1 class="hero-title">F1 FILME</h1>
+
+            <p class="hero-description">
+                Uma jornada insana pelo mundo das corridas ilegais, supercarros e velocidade extrema.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="hero-btn play" id="playTrailerBtn">▶ Trailer</button>
+                <button class="hero-btn info">ℹ Mais informações</button>
+                
+            </div>
+        </div>
+
+        <!-- Botão de controle à direita -->
+        <div class="hero-controls-right">
+            <button id="muteBtn" class="mute-btn" aria-label="Alternar som">
+                <span id="muteIcon">🔇</span>
+            </button>
+        </div>
+    </section>
+    <main>
+        <div class="tabs">
+           <a href="home.html"><button class="tab-btn active">Início</button></a>
+        </div>
+
+        <section class="section">
+            <h2>FILMES</h2>
+
+            <div class="row">
+                <div class="card" data-title="Velozes e Furiosos">
+                    <img src="../assets/img/vf1.png" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/v1.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Velozes e Furiosos</span>
+                    <div class="card-info">
+                        <div class="card-icons">
+                            <div class="icon-circle">▶</div>
+                            <div class="icon-circle">+</div>
+                            <div class="icon-circle">👍</div>
+                        </div>
+                        <div class="card-metadata">
+                            <span class="match">98% relevante</span>
+                            <span class="age">14+</span>
+                        </div>
+                        <span class="card-category">Ação • Carros • Adrenalina</span>
+                    </div>
+                </div>
+
+                <div class="card" data-title="Gran Turismo">
+                    <img src="../assets/img/gt1.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/gran.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Gran Turismo</span>
+                </div>
+
+                <div class="card" data-title="Ford vs Ferrari">
+                    <img src="../assets/img/fvf1.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/fvf.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Ford vs Ferrari</span>
+                </div>
+
+                <div class="card" data-title="Nascido para Correr">
+                    <img src="../assets/img/npc1.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/npc.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Nascido para Correr</span>
+                </div>
+
+                <div class="card" data-title="Velozes e Furiosos 10">
+                    <img src="../assets/img/vf10.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/vf10.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Velozes e Furiosos 10</span>
+                </div>
+
+                <div class="card" data-title="Velozes e Furiosos 8">
+                    <img src="../assets/img/vf8.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/vf8.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Velozes e Furiosos 8</span>
+                </div>
+
+                <div class="card" data-title="Velozes e Furiosos 7">
+                    <img src="../assets/img/vf7.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/vf7.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Velozes e Furiosos 7</span>
+                </div>
+
+                <div class="card" data-title="Velozes e Furiosos 6">
+                    <img src="../assets/img/vf6.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/vf6.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Velozes e Furiosos 6</span>
+                </div>
+
+                <div class="card" data-title="Velozes e Furiosos 5">
+                    <img src="../assets/img/vf5.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/vf5.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Velozes e Furiosos 5</span>
+                </div>
+
+                <div class="card" data-title="Velozes e Furiosos 4">
+                    <img src="../assets/img/vf4.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/vf4.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Velozes e Furiosos 4</span>
+                </div>
+
+                <div class="card" data-title="Velozes e Furiosos Desafio em Toquio">
+                    <img src="../assets/img/vfdt.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/vfdt.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Velozes e Furiosos Desafio em Toquio</span>
+                </div>
+
+                <div class="card" data-title="Velozes e Furiosos Hobbs e Shaw 2">
+                    <img src="../assets/img/vfhs.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/vfhs.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Velozes e Furiosos Hobbs e Shaw 2</span>
+                </div>
+
+                <div class="card" data-title="Carros">
+                    <img src="../assets/img/carros.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/carros.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Carros</span>
+                </div>
+
+                <div class="card" data-title="Ferrari">
+                    <img src="../assets/img/ferrari.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/ferrari.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Ferrari</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        © 2026 RacerFlix
+    </footer>
+    <script src="../js/global.js" defer></script>
+    <script src="../js/filmes.js" defer></script>
+</body>
+</html>

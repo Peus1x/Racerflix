@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RacerFlix</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/jogos.css">
+</head>
+<body>
+    <video id="bgVideo" class="video-bg" autoplay muted loop playsinline preload="auto">
+        <source src="../assets/vid/night.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo em background.
+    </video>
+    <!-- Tela de carregamento -->
+    <div id="loader" class="loader-overlay">
+        <video autoplay muted loop playsinline></video>
+        <div class="netflix-spinner"></div>
+    </div>
+    <div id="fadeOverlay"></div>
+    <div id="global-header"></div>
+
+    <!-- HERO / BANNER -->
+    <section class="hero">
+        <video id="heroVideo" class="hero-video" muted playsinline poster="../assets/img/TW2.jpg">
+            <source src="../assets/vid/tw2g.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+
+        <div class="hero-content">
+            <h1 class="hero-title">THE CREW 2</h1>
+
+            <p class="hero-description">
+                Uma jornada insana pelo mundo das corridas ilegais, supercarros e velocidade extrema.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="hero-btn play" id="playTrailerBtn">▶ Trailer</button>
+                <button class="hero-btn info">ℹ Mais informações</button>
+                
+            </div>
+        </div>
+
+        <!-- Botão de controle à direita -->
+        <div class="hero-controls-right">
+            <button id="muteBtn" class="mute-btn" aria-label="Alternar som">
+                <span id="muteIcon">🔇</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO -->
+    <main>
+        <div class="tabs">
+            <a href="jogos.html"><button class="tab-btn">Jogos</button></a>
+        </div>
+        <section class="section">
+            <h2>Jogos de Corrida</h2>
+
+            <div class="row">
+                <a href="https://store.steampowered.com/app/1551360/Forza_Horizon_5/" class="card" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/img/forza.png.webp" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/FRZG.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Forza Horizon</span>
+                </a>
+
+                <a href="https://store.steampowered.com/app/1262540/Need_for_Speed/?curator_clanid=36140392" class="card" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/img/need.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/nfsg.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Need for Speed</span>
+                </a>
+
+                <a href="https://store.steampowered.com/app/3059520/F1_25/" class="card" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/img/f126.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/f1g.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">F1 26</span>
+                </a>
+
+                <a href="https://store.steampowered.com/app/244210/Assetto_Corsa/" class="card" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/img/assetto.png.webp" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/ASCG.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Assetto Corsa</span>
+                </a>
+
+                <a href="https://store.steampowered.com/app/244210/Assetto_Corsa/" class="card" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/img/nfshg.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/nfshg.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Need For Speed Heat</span>
+                </a>
+
+                <a href="https://store.steampowered.com/app/244210/Assetto_Corsa/" class="card" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/img/nfsmg.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/nfsmg.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Need For Speed Most Wanted</span>
+                </a>
+
+                <a href="https://store.steampowered.com/app/244210/Assetto_Corsa/" class="card" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/img/nfspg.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/nfspg.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Need For Speed Payback</span>
+                </a>
+
+                <a href="https://store.steampowered.com/app/244210/Assetto_Corsa/" class="card" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/img/twm.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/twmg.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">The Crew MotorFest</span>
+                </a>
+
+                <a href="https://store.steampowered.com/app/244210/Assetto_Corsa/" class="card" target="_blank" rel="noopener noreferrer">
+                    <img src="../assets/img/frz7.jpg" alt="">
+                    <video class="card-video"playsinline preload="auto">
+                        <source src="../assets/vid/frzmg.mp4" type="video/mp4">
+                    </video>
+                    <span class="card-title">Forza Motorsport 7</span>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        © 2026 RacerFlix
+    </footer>
+    <script src="../js/global.js" defer></script>
+    <script src="../js/home.js" defer></script>
+</body>
+</html>

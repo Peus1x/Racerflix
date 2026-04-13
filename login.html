@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <video id="bgVideo" class="video-bg" autoplay muted loop playsinline>
+        <source src="assets/vid/night.mp4" type="video/mp4">
+    </video>
+
+<div class="bg-layer"></div>
+    <div class="login-page">
+        <div class="bg-layer"></div>
+        <div class="login-container">
+            <div class="login-header">
+                <span class="logo">R A C E R F L I X</span>
+            </div>
+            <form class="login-form" action="#" method="post">
+                <h1>Entrar</h1>
+                <div class="input-group">
+                    <label for="email">Email ou número de telefone</label>
+                    <input id="email" name="email" type="email" placeholder="Digite seu email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input id="password" name="password" type="password" placeholder="Digite sua senha" required>
+                </div>
+                <button type="button" id="loginBtn" class="login-button">Entrar</button>
+                <div class="login-extra">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="remember">
+                        Lembre-se de mim
+                    </label>
+                    <a href="#">Precisa de ajuda?</a>
+                </div>
+            </form>
+            <p class="signup-text">Novo por aqui? <a href="#">Assine agora</a>.</p>
+        </div>
+    </div>
+
+    <script src="./js/global.js" defer></script>
+    <script src="./js/login.js" defer></script>
+    
+</body>
+</html>

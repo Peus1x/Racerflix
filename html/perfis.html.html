@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/perfis.css.css">
+</head>
+<body>
+    <video id="bgVideo" class="video-bg" autoplay muted loop playsinline>
+        <source src="../assets/vid/night.mp4" type="video/mp4">
+    </video>
+
+    <!-- Botão de toggle dark/light mode -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Alternar modo escuro/claro">
+        <img id="themeIcon" src="../assets/img/toogle-light.png" alt="Ícone modo" width="24" height="24" />
+    </button>
+
+    <main>
+        <h1>Quem esta assistindo?</h1>
+        <section aria-label = "Perfis disponiveis">
+            <ul class = "profiles">
+                <li>
+                    <a href="home.html" class="profile" data-perfil="1">
+                        <figure>
+                            <video src="../assets/vid/pf1.mp4" muted loop playsinline autoplay preload="auto"></video>
+                            <figcaption>Joao</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="home.html" class="profile" data-perfil="2">
+                        <figure>
+                            <video src="../assets/vid/pf2.mp4" muted loop playsinline autoplay preload="auto"></video>
+                            <figcaption>Pedro</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="home.html" class="profile" data-perfil="3">
+                        <figure>
+                            <video src="../assets/vid/pf3.mp4" muted loop playsinline autoplay preload="auto"></video>
+                            <figcaption>Gusmao</figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    
+    
+    
+    
+    
+    <script src="../js/global.js" defer></script>
+    <script src="../js/perfis.js.js" defer></script>
+</body>
+</html>
