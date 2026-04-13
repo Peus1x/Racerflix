@@ -34,9 +34,9 @@ It demonstrates skills in UIUX design, performance optimization, and dynamic com
 
 ## 📸 Preview
 
-![Home](./leia-me/home.png)
-![Profiles](./leia-me/perfis.png)
-![Preview](./leia-me/preview.png)
+![Home](readme/home.png)
+![Profiles](readme/perfis.png)
+![Preview](readme/preview.png)
 
 ## 👨‍💻 Author
 
